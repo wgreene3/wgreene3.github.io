@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Will — Mechanical Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FFFFFF;
+    --text:#1A1A1A;
+    --muted:#5C6066;
+    --line:#E4E5E7;
+    --accent:#1F4E8C; /* steel blue */
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;font-size:16.5px;line-height:1.65}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px}
+  h1,h2,h3{font-family:'Source Serif 4',serif}
+
+  header{padding:96px 0 64px;border-bottom:1px solid var(--line)}
+  header h1{font-size:40px;font-weight:700;letter-spacing:-.01em}
+  header .role{color:var(--muted);font-size:18px;margin-top:6px}
+  header p.intro{margin-top:24px;max-width:60ch}
+  header .links{margin-top:20px;font-size:15px;display:flex;gap:22px;flex-wrap:wrap}
+
+  section{padding:56px 0;border-bottom:1px solid var(--line)}
+  section:last-of-type{border-bottom:0}
+  h2{font-size:15px;font-weight:600;font-family:'Inter',sans-serif;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:36px}
+
+  .project{margin-bottom:52px}
+  .project:last-child{margin-bottom:0}
+  .project h3{font-size:24px;font-weight:600;margin-bottom:4px}
+  .project .meta{font-size:14px;color:var(--muted);margin-bottom:14px}
+  .project p{margin-bottom:12px;max-width:64ch}
+  .project p:last-of-type{margin-bottom:0}
+  .photo{border:1px solid var(--line);background:#F7F7F8;border-radius:6px;min-height:220px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:14px;margin:18px 0 4px;overflow:hidden}
+  .photo img{width:100%;height:100%;object-fit:cover;display:block}
+
+  .job h3{font-size:19px;font-weight:600}
+  .job .meta{font-size:14px;color:var(--muted);margin:2px 0 10px}
+  .job p{max-width:64ch}
+  .job ul{max-width:64ch;padding-left:18px}
+  .job li{margin-bottom:6px}
+  .job li:last-child{margin-bottom:0}
+  .job + .job{margin-top:36px}
+
+  .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:28px}
+  .skills h3{font-size:15px;font-family:'Inter',sans-serif;font-weight:600;margin-bottom:8px}
+  .skills ul{list-style:none;color:var(--muted);font-size:15px}
+  .skills li{padding:2px 0}
+
+  footer{padding:56px 0 80px}
+  footer h2{margin-bottom:14px}
+  footer p{max-width:60ch}
+  footer .links{margin-top:16px;font-size:15px;display:flex;gap:22px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <h1>Will Greene</h1>
+    <p class="role">Mechanical Engineer</p>
+    <p class="intro">Senior mechanical engineering student with hands-on experience in mechatronics and composites fabrication. Interested in manufacturing.</p>
+    <div class="links">
+      <a href="mailto:will.f.greene@gmail.com">Email</a>
+      <a href="tel:+12408883814">(240) 888-3814</a>
+      <a href="https://www.linkedin.com/in/willgreene2027">LinkedIn</a>
+    </div>
+  </header>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+
+    <article class="project">
+      <h3>Precision Linear Stage Control</h3>
+      <p class="meta">Precision Mechatronics and Controls Lab (WEMPEC) · Madison, WI · October 2025 – Present</p>
+      <p>Builds and harnesses a dual-axis precision linear stage, integrating servo amplifiers and feedback encoders with clean signal routing. Develops a feedforward control system for high-accuracy micro-scale motion and compares friction models, including Generalized Maxwell Slip and Coulomb, to reduce hysteresis and improve tracking performance.</p>
+      <div class="photo"><img src="images/precision-linear-stage.jpg" alt="Dual-axis precision linear stage with Aerotech PRO165LM actuators and cable harnessing"></div>
+    </article>
+
+    <article class="project">
+      <h3>Carbon Fiber Aerofoil</h3>
+      <p class="meta">Personal project · Composites</p>
+      <p>Used carbon fiber wet layup to build a dimensionally scaled NACA aerofoil as a way to learn how composite parts are actually manufactured. Scaled the foam mold from reference airfoil geometry, then worked through mold shaping and surface prep, layup and resin work, and post processing to a finished part.</p>
+      <div class="photo"><img src="images/carbon-fiber-aerofoil.jpg" alt="Finished carbon fiber NACA aerofoil, side profile showing layup and trailing edge"></div>
+    </article>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="job">
+      <h3>Data Science and Certification Intern — Air Conditioning, Heating and Refrigeration Institute (AHRI)</h3>
+      <p class="meta">Arlington, VA · June 2025 – August 2025</p>
+      <p>Analyzed performance data across a library of over 20 million heat pump products using Python, Spark, SQL, Databricks, Apache Airflow, and MS Azure to surface technical differentiators between manufacturers. Turned that analysis into insights that helped management and standards laboratories shape new testing protocols and standardization priorities, while building a working grasp of heat pump design trade-offs from efficiency to performance across climate conditions.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div>
+        <h3>Design</h3>
+        <ul>
+          <li>CAD</li>
+          <li>Design for manufacturing</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Fabrication</h3>
+        <ul>
+          <li>3D printing (FDM)</li>
+          <li>Composite wet layup</li>
+          <li>Printed-mold tooling</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Electronics &amp; Controls</h3>
+        <ul>
+          <li>Arduino</li>
+          <li>Motor drives &amp; encoders</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <h2>Contact</h2>
+    <p>Open to full-time roles and internships in manufacturing and semiconductor equipment starting May 2027.</p>
+    <div class="links">
+      <a href="mailto:will.f.greene@gmail.com">Email</a>
+      <a href="tel:+12408883814">(240) 888-3814</a>
+      <a href="https://www.linkedin.com/in/willgreene2027">LinkedIn</a>
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>
